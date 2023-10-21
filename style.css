@@ -154,9 +154,11 @@ table {
   font-family: "Cherolina", sans-serif;
   text-align: center;
   font-size: 58px;
+  text-shadow: 0px 2px 5px black;
 }
 
 .banner-subtitle {
   font-family: "OptimusPrinceps", sans-serif;
   text-align: center;
+  text-shadow: 0px 2px 5px black;
 }
