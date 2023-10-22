@@ -173,16 +173,20 @@ table {
   padding: 35px 16px;
 }
 
-.date-info-container {
+.content {
+  margin-inline: auto;
+  font-size: clamp(0.625rem, 0.3393rem + 1.4286vw, 1.625rem);
+  line-height: 143%;
   font-family: "IowanOldSt BT", sans-serif;
   color: #625b59;
-  line-height: 143%;
   text-align: center;
+}
+
+.date-info-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-inline: auto;
-  font-size: clamp(0.625rem, 0.3393rem + 1.4286vw, 1.625rem);
 }
 
 .date-info-container .leaves-separator {
@@ -200,9 +204,41 @@ table {
   width: 100%;
 }
 
+.address-container {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rings-image {
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.hotel-name {
+  font-family: "Cherolina", sans-serif;
+  color: #a7a653;
+  font-size: clamp(1.875rem, 0.6607rem + 6.0714vw, 6.125rem);
+  line-height: 110%;
+}
+
+.address {
+  font-size: clamp(0.5rem, 0.2143rem + 1.4286vw, 1.5rem);
+}
+
+.hour {
+  font-weight: 700;
+  font-size: clamp(0.5rem, 0.2143rem + 1.4286vw, 1.5rem);
+}
+
 @media screen and (min-width: 750px) {
   .date-info-container .leaves-separator {
     width: 20%;
+  }
+
+  .rings-image {
+    width: auto;
   }
 }
 
@@ -215,7 +251,7 @@ table {
     bottom: 13%;
   }
 
-  .date-info-container {
+  .content {
     max-width: 66.7%;
   }
 }
