@@ -236,6 +236,7 @@ main {
   color: #a7a653;
   font-size: clamp(1.875rem, 0.6607rem + 6.0714vw, 6.125rem);
   line-height: 110%;
+  text-shadow: 0 0 0 #a7a653;
 }
 
 .bold {
