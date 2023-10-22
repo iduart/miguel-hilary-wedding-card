@@ -220,6 +220,7 @@ main {
 
 .block-image {
   width: 20%;
+  height: auto;
   margin-bottom: 10px;
 }
 
