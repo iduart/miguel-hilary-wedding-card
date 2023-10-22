@@ -380,6 +380,10 @@ main {
     right: -35px;
     top: 13%;
   }
+
+  .recuerdos-text {
+    margin-top: -5%;
+  }
 }
 
 @media screen and (min-width: 990px) {
