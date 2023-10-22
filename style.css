@@ -171,6 +171,7 @@ table {
   position: relative;
   z-index: 1;
   padding-top: 35px;
+  overflow-x: hidden;
 }
 
 .content {
@@ -303,6 +304,20 @@ table {
   width: 100%;
 }
 
+.leaves-decoration-left {
+  position: absolute;
+  width: 25%;
+  left: 0;
+  top: 32%;
+}
+
+.leaves-decoration-right {
+  position: absolute;
+  width: 40%;
+  right: -43px;
+  top: 17%;
+}
+
 @media screen and (min-width: 750px) {
   .date-info-container .leaves-separator {
     width: 20%;
@@ -311,6 +326,16 @@ table {
   .button {
     padding: 8px 15px;
     font-size: 12px;
+  }
+
+  .leaves-decoration-left {
+    width: 20%;
+  }
+
+  .leaves-decoration-right {
+    width: 32%;
+    right: -35px;
+    top: 13%;
   }
 }
 
@@ -330,5 +355,9 @@ table {
   .button {
     padding: 10px 23px;
     font-size: 20px;
+  }
+
+  .leaves-decoration-left {
+    width: 16%;
   }
 }
