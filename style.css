@@ -265,20 +265,6 @@ main {
   background-color: #a7a653;
 }
 
-.section {
-  opacity: 0;
-  transform: translateY(
-    100px
-  ); /* initial state - sections will start a bit below their original position */
-  transition: opacity 1s, transform 1s; /* smooth transition for fade-in and slide-up effect */
-  will-change: opacity, transform;
-}
-
-.section.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .line-leaves-separator {
   width: 80%;
   margin-inline: auto;
