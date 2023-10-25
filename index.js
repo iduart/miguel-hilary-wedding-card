@@ -1,25 +1,68 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //   const sections = document.querySelectorAll(".section");
+  /**
+   * sound
+   */
 
-  //   const revealConfig = {
-  //     root: null,
-  //     rootMargin: "0px",
-  //     threshold: 0.1, // Adjust this if you want to trigger the animation sooner or later
-  //   };
+  var song = document.getElementById("song");
+  var audioSection = document.getElementById("audio-section");
+  var soundOn = document.getElementById("sound-on");
+  var soundOff = document.getElementById("sound-off");
 
-  //   const revealObserver = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("reveal");
-  //       }
-  //     });
-  //   }, revealConfig);
+  audioSection.addEventListener("click", function (event) {
+    songControls();
+    event.stopPropagation();
+    event.preventDefault();
+  });
 
-  //   sections.forEach((section) => {
-  //     revealObserver.observe(section);
-  //   });
+  function songControls() {
+    const isPlaying = !song.paused;
+    if (isPlaying) {
+      soundOff.classList.remove("hide");
+      soundOn.classList.add("hide");
 
-  // Slider
+      song.pause();
+    } else {
+      soundOff.classList.add("hide");
+      soundOn.classList.remove("hide");
+
+      song.play();
+    }
+  }
+
+  /**
+   * Envelop
+   */
+  var envelope = document.getElementById("envelope");
+  var btnOpen = document.getElementById("open-letter");
+  var btnClose = document.getElementById("close-letter");
+
+  btnOpen.addEventListener("click", function () {
+    open();
+  });
+  btnClose.addEventListener("click", function () {
+    close();
+  });
+
+  function open() {
+    envelope.classList.add("open");
+    envelope.classList.remove("close");
+    soundOff.classList.add("hide");
+    soundOn.classList.remove("hide");
+    btnOpen.classList.add("conceal");
+    song.play();
+  }
+  function close() {
+    envelope.classList.add("close");
+    envelope.classList.remove("open");
+    soundOff.classList.remove("hide");
+    soundOn.classList.add("hide");
+    btnOpen.classList.remove("conceal");
+    song.pause();
+  }
+
+  /**
+   * Slider
+   */
   let currentSlide = 0;
   const slides = document.querySelectorAll(".slider-image");
   const dots = document.querySelectorAll(".dot");

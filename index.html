@@ -34,139 +34,184 @@
       href="https://fonts.cdnfonts.com/css/iowanoldst-bt?styles=16080,16078"
       rel="stylesheet"
     />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./M&H.svg" type="image/x-icon" />
   </head>
   <body>
     <main>
-      <div class="banner">
-        <div class="banner-overlay">&nbsp;</div>
-        <img src="./img/banner.jpg" />
-        <div class="banner-content">
-          <div class="banner-title">Miguel & Hilary</div>
-          <div class="banner-subtitle">! NOS CASAMOS !</div>
+      <div class="envelope-wrapper">
+        <img id="open-letter" src="./img/seal.svg" style="width: 200px;" class="open-letter-button center"/>
         </div>
-      </div>
-      <div class="main-body">
-        <img src="./img/leaves-3.svg" class="leaves-decoration-left" />
-        <img src="./img/leaves-4.svg" class="leaves-decoration-right" />
-        <img src="./img/leaves-5.svg" class="leaves-decoration-top" />
-        <div class="content">
-          <div class="date-info-container section">
-            <div>
-              <p>HEMOS VIVIDO MUCHAS FECHAS ESPECIALES JUNTOS,</p>
-              <p>PERO COMPARTIR NUESTRA BODA CON USTEDES,</p>
-              <p>LO VA A CONVERTIR EN UN MOMENTO INOLVIDABLE.</p>
+        <div id="envelope" class="close center">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter">
+            <div class="controls">
+              <div id="audio-section" class="sound-on-off elevated-button">
+                <div class="sound-text">
+                  <img id="sound-on" src="./img/sound-on.svg" />
+                  <img id="sound-off" class="hide" src="./img/sound-off.svg" />
+                </div>
+                <audio id="song" loop autoplay>
+                  <source src="./audio/cancion.mp3" type="audio/mpeg" />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
+              <div id="close-letter" class="elevated-button">
+                <img src="./img/close.svg" />
+              </div>
             </div>
-            <img src="./img/leaves-2.svg" class="leaves-separator" />
-            <div>
-              <p>TE INVITAMOS A CELEBRAR LA UNIÓN DE</p>
-              <p>NUESTRAS VIDAS</p>
+            <div class="banner">
+              <div class="banner-overlay">&nbsp;</div>
+              <img src="./img/banner.jpg" />
+              <div class="banner-content">
+                <div class="banner-title">Miguel & Hilary</div>
+                <div class="banner-subtitle">! NOS CASAMOS !</div>
+              </div>
             </div>
-            <div class="date-container">
-              <img src="./img/date.png" />
-            </div>
-          </div>
+            <div class="main-body">
+              <img src="./img/leaves-3.svg" class="leaves-decoration-left" />
+              <img src="./img/leaves-4.svg" class="leaves-decoration-right" />
+              <img src="./img/leaves-5.svg" class="leaves-decoration-top" />
+              <div class="content">
+                <div class="date-info-container section">
+                  <div>
+                    <p>HEMOS VIVIDO MUCHAS FECHAS ESPECIALES JUNTOS,</p>
+                    <p>PERO COMPARTIR NUESTRA BODA CON USTEDES,</p>
+                    <p>LO VA A CONVERTIR EN UN MOMENTO INOLVIDABLE.</p>
+                  </div>
+                  <img src="./img/leaves-2.svg" class="leaves-separator" />
+                  <div>
+                    <p>TE INVITAMOS A CELEBRAR LA UNIÓN DE</p>
+                    <p>NUESTRAS VIDAS</p>
+                  </div>
+                  <div class="date-container">
+                    <img src="./img/date.png" />
+                  </div>
+                </div>
 
-          <div class="address-container block-section section">
-            <img src="./img/rings.svg" class="block-image" />
-            <p>CEREMONIA CRISTIANA</p>
-            <p class="info-highlight">Jardín Hotel Radisson</p>
-            <p class="address text-xs">CARRERA 9# 22-850 CARTAGENA, BOLÍVAR</p>
-            <p class="hour bold text-xs">4:00 P.M</p>
-          </div>
+                <div class="address-container block-section section">
+                  <img src="./img/rings.svg" class="block-image" />
+                  <p>CEREMONIA CRISTIANA</p>
+                  <p class="info-highlight">Jardín Hotel Radisson</p>
+                  <p class="address text-xs">
+                    CARRERA 9# 22-850 CARTAGENA, BOLÍVAR
+                  </p>
+                  <p class="hour bold text-xs">4:00 P.M</p>
+                </div>
 
-          <div class="reception-container block-section section">
-            <img src="./img/glass.svg" class="block-image" />
-            <p class="bold">RECEPCIÓN</p>
-            <p class="info-highlight">Salón Cañones</p>
-            <p class="text-xs">RADISSON OCEAN PAVILLION</p>
-            <p class="bold text-xs">6:30 P.M</p>
-            <a
-              href="https://maps.app.goo.gl/gtJkFSCfH4CutHQm8"
-              class="button block-button"
-              target="_blank"
-              >COMO LLEGAR</a
-            >
-          </div>
+                <div class="reception-container block-section section">
+                  <img src="./img/glass.svg" class="block-image" />
+                  <p class="bold">RECEPCIÓN</p>
+                  <p class="info-highlight">Salón Cañones</p>
+                  <p class="text-xs">RADISSON OCEAN PAVILLION</p>
+                  <p class="bold text-xs">6:30 P.M</p>
+                  <a
+                    href="https://maps.app.goo.gl/gtJkFSCfH4CutHQm8"
+                    class="button block-button"
+                    target="_blank"
+                    >COMO LLEGAR</a
+                  >
+                </div>
 
-          <div class="gift-container block-section section">
-            <img src="./img/gift.svg" class="block-image" />
-            <p class="bold">REGALO</p>
-            <p class="text-xs">NO HAY MEJOR REGALO QUE TU PRESENCIA</p>
-            <p class="text-xs">EN NUESTRO GRAN DÍA</p>
-            <p class="text-xs">
-              SI DESEAS DARNOS UN DETALLE PARA NUESTRA NUEVA VIDA
-            </p>
-            <p class="text-xs">LO PUEDES HACER POR MEDIO DE LA</p>
-            <p class="info-highlight">lluvia de Sobres</p>
-          </div>
+                <div class="gift-container block-section section">
+                  <img src="./img/gift.svg" class="block-image" />
+                  <p class="bold">REGALO</p>
+                  <p class="text-xs">NO HAY MEJOR REGALO QUE TU PRESENCIA</p>
+                  <p class="text-xs">EN NUESTRO GRAN DÍA</p>
+                  <p class="text-xs">
+                    SI DESEAS DARNOS UN DETALLE PARA NUESTRA NUEVA VIDA
+                  </p>
+                  <p class="text-xs">LO PUEDES HACER POR MEDIO DE LA</p>
+                  <p class="info-highlight">lluvia de Sobres</p>
+                </div>
 
-          <div class="confirmar-asistencia-container block-section section">
-            <img
-              src="./img/leaves-separator.svg"
-              class="line-leaves-separator"
-              style="padding-top: 0"
-            />
-            <p class="bold">CONFIRMAR ASISTENCIA</p>
-            <p class="text-xs">POR FAVOR HAZNOS LLEGAR TU RESPUESTA</p>
-            <p class="text-xs">ANTES DEL 25 DE NOVIEMBRE</p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdUPDBcS7grUXe6022I2srxeZLhLDDmYk4EkyBmnj_wc6wciQ/viewform"
-              class="button block-button"
-              target="_blank"
-              >Confirma Aquí</a
-            >
-            <img
-              src="./img/leaves-separator.svg"
-              class="line-leaves-separator"
-              style="padding-bottom: 0"
-            />
-          </div>
+                <div
+                  class="confirmar-asistencia-container block-section section"
+                >
+                  <img
+                    src="./img/leaves-separator.svg"
+                    class="line-leaves-separator"
+                    style="padding-top: 0"
+                  />
+                  <p class="bold">¡CONFIRMAR ASISTENCIA!</p>
+                  <p class="text-xs">POR FAVOR HAZNOS LLEGAR TU RESPUESTA</p>
+                  <p class="text-xs">ANTES DEL 20 DE NOVIEMBRE</p>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdUPDBcS7grUXe6022I2srxeZLhLDDmYk4EkyBmnj_wc6wciQ/viewform"
+                    class="button block-button"
+                    target="_blank"
+                    >Confirma Aquí</a
+                  >
+                  <img
+                    src="./img/leaves-separator.svg"
+                    class="line-leaves-separator"
+                    style="padding-bottom: 0"
+                  />
+                </div>
 
-          <div class="vestimenta-container block-section section">
-            <img src="./img/hanger.svg" class="block-image" />
-            <div style="margin-bottom: 3%">
-              <p class="bold">CÓDIGO DE</p>
-              <p class="bold">VESTIMENTA</p>
-            </div>
-            <p class="text-xs">
-              <span class="green-highlight">MUJERES:</span> QUEREMOS QUE ESTÉS
-              LINDA, POR ESO SUGERIMOS
-            </p>
-            <p class="text-xs">
-              PARA ESE DÍA ESPECIAL UN VESTIDO LARGO EN COLORES
-            </p>
-            <p class="text-xs">PLANOS SIN ESTAMPADO.</p>
+                <div class="vestimenta-container block-section section">
+                  <img src="./img/hanger.svg" class="block-image" />
+                  <div style="margin-bottom: 3%">
+                    <p class="bold">CÓDIGO DE</p>
+                    <p class="bold">VESTIMENTA</p>
+                  </div>
+                  <p class="text-xs">
+                    <span class="green-highlight">MUJERES:</span> QUEREMOS QUE
+                    ESTÉS LINDA, POR ESO SUGERIMOS
+                  </p>
+                  <p class="text-xs">
+                    PARA ESE DÍA ESPECIAL UN VESTIDO LARGO EN COLORES
+                  </p>
+                  <p class="text-xs">PLANOS SIN ESTAMPADO.</p>
 
-            <p class="text-xs" style="margin-top: 2%">
-              <span class="green-highlight">HOMBRES:</span> SACA TU MEJOR PINTA
-              DE LINO O TRAJE GUAYABERA
-            </p>
-            <p class="text-xs">DE COLOR PLANO Y SIN ESTAMPADO</p>
-          </div>
+                  <p class="text-xs" style="margin-top: 2%">
+                    <span class="green-highlight">HOMBRES:</span> SACA TU MEJOR
+                    PINTA DE LINO O TRAJE GUAYABERA
+                  </p>
+                  <p class="text-xs">DE COLOR PLANO Y SIN ESTAMPADO</p>
+                  <img
+                    src="./img/leaves-separator.svg"
+                    class="line-leaves-separator"
+                    style="padding-bottom: 0"
+                  />
+                </div>
+                <div class="instagram block-section section">
+                  <img src="./img/instagram.svg" class="block-image" />
+                  <div style="margin-bottom: 3%">
+                    <p class="bold">PARA TU INSTAGRAM</p>
+                  </div>
+                  <p class="text-xs">EL DIA DE LA BODA ESCANEA ESTE QR Y</p>
+                  <p class="text-xs">CAPTURA CADA MOMENTO USANDO ESTE FILTRO</p>
+                  <img src="./img/marco-mh.svg" style="width: 50%" />
+                  <p class="text-xs">NO OLVIDES USAR EL HASHTAG</p>
+                  <span class="green-highlight">#MIKEYHILARY</span>
+                </div>
 
-          <div class="recuerdos-container section">
-            <img
-              src="./img/leaves-separator.svg"
-              class="line-leaves-separator"
-              style="width: 75%"
-            />
-            <p class="bold nuestros-text">NUESTROS</p>
-            <p class="info-highlight recuerdos-text">Recuerdos</p>
-            <div class="gallery-container">
-              <img class="slider-image" src="./img/gallery/slide1.jpg" />
-              <img class="slider-image" src="./img/gallery/slide2.jpg" />
-              <img class="slider-image" src="./img/gallery/slide3.jpg" />
-              <img class="slider-image" src="./img/gallery/slide4.jpg" />
-              <img class="slider-image" src="./img/gallery/slide5.jpg" />
+                <div class="recuerdos-container section">
+                  <img
+                    src="./img/leaves-separator.svg"
+                    class="line-leaves-separator"
+                    style="width: 75%"
+                  />
+                  <p class="bold nuestros-text">NUESTROS</p>
+                  <p class="info-highlight recuerdos-text">Recuerdos</p>
+                  <div class="gallery-container">
+                    <img class="slider-image" src="./img/gallery/slide1.jpg" />
+                    <img class="slider-image" src="./img/gallery/slide2.jpg" />
+                    <img class="slider-image" src="./img/gallery/slide3.jpg" />
+                    <img class="slider-image" src="./img/gallery/slide4.jpg" />
+                    <img class="slider-image" src="./img/gallery/slide5.jpg" />
 
-              <div class="dot-navigation-container">
-                <div class="dot-navigation">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
+                    <div class="dot-navigation-container">
+                      <div class="dot-navigation">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
